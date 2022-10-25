@@ -5,12 +5,17 @@
 Console.WriteLine("Enter a three-digit number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-int result = RemoveFirstAndLastDigit(num);
+int result = Func(num);
 Console.WriteLine(result);
 
-int RemoveFirstAndLastDigit(int number)
+/*int RemoveFirstAndLastDigit(int number)
 {
     int firstDigit = number / 100;
     int secondDigit = number % 10;
    return (num - (firstDigit * 100 + secondDigit)) / 10;
+}*/
+
+int Func(int nym)
+{
+  return nym/10%10;
 }
