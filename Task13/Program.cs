@@ -3,7 +3,7 @@
 
 Console.WriteLine("Enter a three-digit number: ");
 int num = Convert.ToInt32(Console.ReadLine());
-
+num = Math.Abs(num);
 
 if (IsNumberHasThirdDigit(num))
 {
